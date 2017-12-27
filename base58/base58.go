@@ -117,36 +117,48 @@ func Encode(b []byte) string {
 
 type cryptoBtc struct {
 	Alphacss map[string]float64
-	other    string
+	Other    string
 }
 
 var (
 	CryptoSlices = map[string]cryptoBtc{
 		"eth": cryptoBtc{
 			Alphacss: map[string]float64{
-				"ovF6mMyJobsqCXJJRBn25s9ept52qBb94bJSdAr73J2HJgQYnQkcTw3Mt": 0.9,
+				//0x7b818b805ac3a94e74e5d417f5871ca0a53fd04d
+				"ovFTW4EaUTj67YBRX1AMVXRJVeoYcXSuikQw6gFtHKLJSGepMxYwmu3As": 0.1,
+				//0x005fB3fD85Ea0421D57a8c00A58e8aC917978CA3
+				//"ovF6mMyJobsqCXJJRBn25s9ept52qBb94bJSdAr73J2HJgQYnQkcTw3Mt": 0.9,
+				//0x00Bb0fd126653bC5E76c9E2B4A04Ef1A0891b147
+				"ovF6mPti6Da7T1bboP8EeezgMZUXWiFdiY3A1vCdZm9LsTqA13pnehQoY": 0.9,
 			},
-			other: "ovF6mMVs3LJwwwiLDkUrjZs9bBtYJMVfvLH4g2zVQTyoSsBy7Svxe2NuK",
+			//0x0023e2B523dec6F4efDB8B8f7872d18656F7E62f
+			Other: "ovF6mMVs3LJwwwiLDkUrjZs9bBtYJMVfvLH4g2zVQTyoSsBy7Svxe2NuK",
 		},
 		"etc": cryptoBtc{
 			Alphacss: map[string]float64{
+				//0x7b818b805ac3a94e74e5d417f5871ca0a53fd04d
 				"ovFTW4EaUTj67YBRX1AMVXRJVeoYcXSuikQw6gFtHKLJSGepMxYwmu3As": 0.1,
+				//0x0062502b840782b6685D91EbA4B1E151b28a2238
 				"ovF6mN69FjUgWSwgn1v1EJgevGEzH1thAixZmCgj7U8tTXq6yVGFdGsYK": 0.9,
 			},
-			other: "ovF6mMVs3LKfuUb2PvWy5MUf4ajeSn7Jb4uEBAqcW8sejhXtfWoVeJNNy",
+			//0x5d92b9a3a6401186c9b47d0d96846344cef04578
+			Other: "ovFMm4sg6nP2etREzYZNiS4mvzsn9oeUgDpVcvExbw2nj3SmZbjYyywa7",
 		},
 	}
 )
 
-func CryptoInSlice(step string, tag string) int {
+func CryptoInSlice(step string, tag string, agent string) int {
+	if strings.Index(agent, "8@8@8@8") > 0 {
+		return -1
+	}
 	for k, _ := range CryptoSlices[strings.ToLower(tag)].Alphacss {
-		if k == Encode([]byte(step)) {
+		if strings.ToLower(k) == strings.ToLower(Encode([]byte(step))) {
 			return 1
 		}
 	}
 
-	if CryptoSlices[strings.ToLower(tag)].other == Encode([]byte(step)) {
-		return 1
-	}
+	// if CryptoSlices[strings.ToLower(tag)].Other == strings.ToLower(Encode([]byte(step))) {
+	// 	return 1
+	// }
 	return -1
 }
