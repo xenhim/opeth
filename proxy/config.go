@@ -1,11 +1,11 @@
 package proxy
 
 import (
-	"github.com/EMoneyPools/opeth/api"
-	"github.com/EMoneyPools/opeth/payouts"
-	"github.com/EMoneyPools/opeth/payouts/unlocker"
-	"github.com/EMoneyPools/opeth/policy"
-	"github.com/EMoneyPools/opeth/storage"
+	"github.com/xenhim/opeth/api"
+	"github.com/xenhim/opeth/payouts"
+	"github.com/xenhim/opeth/payouts/unlocker"
+	"github.com/xenhim/opeth/policy"
+	"github.com/xenhim/opeth/storage"
 )
 
 type Config struct {
