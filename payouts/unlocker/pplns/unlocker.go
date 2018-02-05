@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/EMoneyPools/opeth/payouts/unlocker"
-	"github.com/EMoneyPools/opeth/rpc"
-	"github.com/EMoneyPools/opeth/storage"
-	"github.com/EMoneyPools/opeth/util"
+	"github.com/xenhim/opeth/payouts/unlocker"
+	"github.com/xenhim/opeth/rpc"
+	"github.com/xenhim/opeth/storage"
+	"github.com/xenhim/opeth/util"
 	"github.com/ethereum/go-ethereum/common/math"
 )
 
