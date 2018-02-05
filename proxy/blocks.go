@@ -9,8 +9,8 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/EMoneyPools/opeth/rpc"
-	"github.com/EMoneyPools/opeth/util"
+	"github.com/xenhim/opeth/rpc"
+	"github.com/xenhim/opeth/util"
 )
 
 const maxBacklog = 3
