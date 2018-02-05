@@ -9,7 +9,7 @@ import (
 
 	"gopkg.in/redis.v3"
 
-	"github.com/EMoneyPools/opeth/util"
+	"github.com/xenhim/opeth/util"
 )
 
 type Config struct {
