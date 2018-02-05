@@ -9,7 +9,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/EMoneyPools/opeth/util"
+	"github.com/xenhim/opeth/util"
 )
 
 const (
