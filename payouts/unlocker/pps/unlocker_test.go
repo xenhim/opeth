@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"pools.jex.cn/open-ethereum-pool/rpc"
-	"pools.jex.cn/open-ethereum-pool/storage"
+	"github.com/xenhim/opeth/rpc"
+	"github.com/xenhim/opeth/storage"
 )
 
 func TestMain(m *testing.M) {
