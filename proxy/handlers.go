@@ -5,8 +5,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/EMoneyPools/opeth/rpc"
-	"github.com/EMoneyPools/opeth/util"
+	"github.com/xenhim/opeth/rpc"
+	"github.com/xenhim/opeth/util"
 )
 
 // Allow only lowercase hexadecimal with 0x prefix
