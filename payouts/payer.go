@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"time"
 
-
+	"github.com/xenhim/opeth/api/subscribe"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 
 	"github.com/xenhim/opeth/rpc"
