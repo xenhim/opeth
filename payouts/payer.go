@@ -8,13 +8,12 @@ import (
 	"strconv"
 	"time"
 
-	"pools.jex.cn/open-ethereum-pool/api/subscribe"
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
 
-	"github.com/EMoneyPools/opeth/rpc"
-	"github.com/EMoneyPools/opeth/storage"
-	"github.com/EMoneyPools/opeth/util"
+	"github.com/xenhim/opeth/rpc"
+	"github.com/xenhim/opeth/storage"
+	"github.com/xenhim/opeth/util"
 )
 
 const txCheckInterval = 5 * time.Second
