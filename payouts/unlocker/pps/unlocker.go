@@ -246,7 +246,7 @@ func (u *BlockUnlocker) handleBlock(block *rpc.GetBlockReply, candidate *storage
 		reward.Add(reward, extraTxReward)
 	}
 
-	.
+	
 	uncleReward := getRewardForUncle(candidate.Height)
 	rewardForUncles := big.NewInt(0).Mul(uncleReward, big.NewInt(int64(len(block.Uncles))))
 	reward.Add(reward, rewardForUncles)
