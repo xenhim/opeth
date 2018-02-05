@@ -3,10 +3,10 @@ package payouts
 import (
 	"strings"
 
-	"github.com/EMoneyPools/opeth/payouts/unlocker"
-	"github.com/EMoneyPools/opeth/payouts/unlocker/pplns"
-	"github.com/EMoneyPools/opeth/payouts/unlocker/pps"
-	"github.com/EMoneyPools/opeth/storage"
+	"github.com/xenhim/opeth/payouts/unlocker"
+	"github.com/xenhim/opeth/payouts/unlocker/pplns"
+	"github.com/xenhim/opeth/payouts/unlocker/pps"
+	"github.com/xenhim/opeth/storage"
 )
 
 type BlockUnlocker struct {
