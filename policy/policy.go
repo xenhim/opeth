@@ -9,8 +9,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/EMoneyPools/opeth/storage"
-	"github.com/EMoneyPools/opeth/util"
+	"github.com/xenhim/opeth/storage"
+	"github.com/xenhim/opeth/util"
 )
 
 type Config struct {
