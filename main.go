@@ -11,10 +11,10 @@ import (
 
 	"github.com/yvasiyarov/gorelic"
 
-	"github.com/EMoneyPools/opeth/api"
-	"github.com/EMoneyPools/opeth/payouts"
-	"github.com/EMoneyPools/opeth/proxy"
-	"github.com/EMoneyPools/opeth/storage"
+	"github.com/xenhim/opeth/api"
+	"github.com/xenhim/opeth/payouts"
+	"github.com/xenhim/opeth/proxy"
+	"github.com/xenhim/opeth/storage"
 )
 
 var cfg proxy.Config
