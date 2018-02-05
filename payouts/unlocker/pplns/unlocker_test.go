@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/EMoneyPools/opeth/rpc"
-	"github.com/EMoneyPools/opeth/storage"
+	"github.com/xenhim/opeth/rpc"
+	"github.com/xenhim/opeth/storage"
 )
 
 func TestMain(m *testing.M) {
